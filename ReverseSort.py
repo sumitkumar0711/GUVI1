@@ -1,5 +1,5 @@
-arr = (input().split())
-a = [int(s) for s in arr]
-a.sort(reverse=True)
-for i in range(len(a)):
-    print(a[i],end="")
+a = map(int,input().strip().split())
+b = list(set(int(s) for s in a))
+b.sort(reverse=True)
+for i in b:
+    print(i,end="")
