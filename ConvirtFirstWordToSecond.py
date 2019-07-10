@@ -13,5 +13,8 @@ if(value1_length <= value2_length):
             break
         else:
             counter += 1
+if(value2_length == value1_length):
+    if(value1[-2]==value2[-2]):
+        counter+=1
 
 print(counter+n)
