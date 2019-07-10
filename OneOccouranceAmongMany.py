@@ -1,3 +1,4 @@
+variable = int(input())
 var = map(int,input().strip().split())
 a = list(int(s) for s in var)
 unique1=[]
@@ -7,7 +8,8 @@ for i in a:
         unique1.append(i)
     else:
         unique2.append(i)
-for i in unique2:
-    unique1.remove(i)
-print(unique1)
+for j in unique2:
+    unique1.remove(j)
+for k in unique1:
+    print(k,end=" ")
 
